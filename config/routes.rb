@@ -1,4 +1,9 @@
 Site4Soft::Application.routes.draw do
+  get "home/index"
+
+  root to: "home#index"
+
+  post "messages/create" => "messages#create"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

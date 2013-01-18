@@ -1,0 +1,63 @@
+<div class="content">
+
+  <!-- BANNER -->
+  <div class="banner">
+    <!-- PATTERN -->
+    <div class="pattern">
+      <div class="container">
+        <div class="row">
+          <!-- MAIN INFO -->
+          <div class="span9">
+            <h1>Juniores desenvolvendo a web como gigantes.</h1>
+            <p>
+              Nós somos a empresa júnior do curso de Engenharia de Software da UFRN. Desenvolvemos soluções web criativas e eficientes que irão levar seu negócio  a outro patamar. Você pode nos contactar pelo formulário abaixo.
+            </p>
+          </div>
+          <!-- MAIN INFO END -->
+          <!-- LOGO -->
+          <div class="span3">
+            <a href="http://4softjr.com.br/#" class="logo">4Soft</a>
+          </div>
+          <!-- LOGO END -->
+        </div>
+      </div>
+    </div>
+    <!-- PATTERN END -->
+  </div>
+  <!-- BANNER END -->
+
+  <div class="container">
+      <!-- CONTACT -->
+      <div class="row contact">
+        <div class="span4">
+          <h2>Quer falar com a gente?</h2>
+          <p>
+            Tem alguma dúvida? Quer apenas dar um oi? Você pode entrar em contato conosco preenchendo o formulário ao lado. 
+          </p>
+          <p>
+            Se preferir, também pode nos encontrar no <a href="https://www.facebook.com/4softjr" target="blank">facebook</a> e no <a href="http://twitter.com/4softjr" target="blank">twitter</a>.
+          </p>
+        </div>
+        <!-- CONTACT FORM -->
+        <form action="messages/create" method="post">
+          <div class="span4">
+            <label>Nome*</label>
+            <input type="text" name="message[name]" required>
+            <label>Email*</label>
+            <input type="email" name="message[email]" required>
+            <label>Empresa</label>
+            <input type="text" name="message[enterprise]">
+            <h5>*campos de preenchimento obrigatório</h5>
+          </div>
+          <div class="span4">
+            <label>Mensagem*</label>
+            <textarea name="message[body]" required></textarea>
+            <input type="submit" class="button">
+          </div>
+        </form>
+        <!-- CONTACT FORM END -->
+      </div>
+      <!-- CONTACT END -->
+    </div>
+
+</div>
