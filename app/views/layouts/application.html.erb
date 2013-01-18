@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Site4Soft</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <title>4Soft - Juniores desenvolvendo a web como gigantes.</title>
   <meta charset="utf-8">
+  <script>
+  $(function() {
+    $( "#dialog-message" ).dialog({
+      modal: true,
+      buttons: {
+        Ok: function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+  });
+  </script>
 </head>
 <body>
 
-<% if flash[:info] %> 
-  <div class="info">
-    <%= flash[:info] %>
+<% if flash[:info] %>
+  <div id="dialog-message" title="Mensagem">
+    <p>
+      <%= message_icon_for(flash[:info]) %>
+      <%= flash[:info] %>
+    </p>
   </div>
 <% end %>
 
