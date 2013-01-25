@@ -49,7 +49,7 @@ Site4Soft::Application.configure do
     :port                 => 587,
     :domain               => 'gmail.com',
     :user_name            => 'boladaodeamor123@gmail.com',
-    :password             => 'hunter123#',
+    :password             => 'potato123#',
     :authentication       => 'login',
     :enable_starttls_auto => true
   }
